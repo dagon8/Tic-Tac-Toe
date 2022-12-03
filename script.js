@@ -1,6 +1,6 @@
 const state = document.getElementById("state")
 
-const winConditions =  [
+const WINCONDITIONS =  [
     ["top-left","middle-left","bottom-left"],
     ["top-middle","middle-middle","bottom-middle"],
     ["top-right","middle-right","bottom-right"],
@@ -74,8 +74,8 @@ const checkWin = (p) => {
         }
     }
 
-    for (let i = 0; i < winConditions.length; i++){
-        let condition = winConditions[i]
+    for (let i = 0; i < WINCONDITIONS.length; i++){
+        let condition = WINCONDITIONS[i]
         if (checkWinAux(condition, playerPositions)){
             return true
         }
