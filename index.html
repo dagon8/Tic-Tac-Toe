@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="name">Tic Tac Toe</h1>
+    <h2 id="state"></h2>
+    <button id="reset" onclick="resetGame()">New Game</button>
+    <div id="board" >
+        <div class="square" id="top-left" onclick="handleClick(event)"></div>
+        <div class="square" id="top-middle" onclick="handleClick(event)"></div>
+        <div class="square" id="top-right" onclick="handleClick(event)"></div>
+
+        <div class="square" id="middle-left" onclick="handleClick(event)"></div>
+        <div class="square" id="middle-middle" onclick="handleClick(event)"></div>
+        <div class="square" id="middle-right" onclick="handleClick(event)"></div>
+
+        <div class="square" id="bottom-left" onclick="handleClick(event)"></div>
+        <div class="square" id="bottom-middle" onclick="handleClick(event)"></div>
+        <div class="square" id="bottom-right" onclick="handleClick(event)"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
