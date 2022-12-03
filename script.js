@@ -40,6 +40,9 @@ const handleClick = (e) => {
         if (checkWin(player)){
             winState()
         }
+        else if (usedPositions.length === 9){
+            drawState()
+        }
         changePlayer()
     }
 }
@@ -97,6 +100,10 @@ const checkWinAux = (condition, positions) => {
 
 const winState = () => {
     state.innerText = `Player ${player} Wins!`
+    continueGame = false
+}
+const drawState = () => {
+    state.innerText = `Draw!`
     continueGame = false
 }
 
